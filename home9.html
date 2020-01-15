@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home9</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.20/datatables.min.css" />
+    <link rel="stylesheet" href="css/css.css">
+
+    <style>
+
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <iframe src="navbar.html" width="100%" height="100%" style="border:none;margin-bottom: -40px;;"></iframe>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">เกี่ยวกับระบบ</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">คำอธิบาย</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">เทมเพลต</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">สร้างแบบบันทึก</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ฐานข้อมูล</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">ข้อกำหนดการเชื่อมต่อ</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">การอัพโหลดข้อมูล</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">นำขึ้นสู่ระบบ</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ส่งออกข้อมูล</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">ส่งออกภายนอก</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ตรวจสอบความถูกต้อง</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">ความครบถ้วน</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ออกรายงาน</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">รายงานการใช้</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="body">
+            <div class="form-group" style="width: 900px; height: 100px;margin: 0 auto;">
+                <h3 style="margin-top:30px;">สร้างการเชื่อมต่อฐานข้อมูลภายนอก</h3>
+
+                <div class="input-group" style="margin-top:50px; width:380px;">
+                    <span class="">ชื่อ Connection *: &nbsp;&nbsp;</span>
+                    <input type="text" placeholder="Connection NameXXX" class="form-control">
+                </div>
+                <div class="input-group" style="margin-top:20px;">
+                    <span class="">Database Type *: &nbsp;&nbsp;</span>
+                    <div style="width: 250px;">
+                        <select class="form-control" name="location">
+                            <option>MsSQL</option>
+                            <option>Oracle</option>
+                            <option>Postgre</option>
+                        </select>
+                    </div>
+                    <div class="input-group" style="margin-top:20px;">
+                        <span class="" style="margin-left:60px">Driver *: &nbsp;&nbsp;</span>
+                        <div style="width: 250px;">
+                            <select class="form-control" name="location">
+                                <option>MsSQL</option>
+
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="input-group" style="width:350px;margin:20px 30px;">
+                        <span>Driver File *: &nbsp;&nbsp;</span>
+                        <div class="custom-file" style="width: 250px;">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span>Connect URL :</span>
+                    </div>
+                    <div class="input-group">
+
+                        <div class="card" style="width: auto;">
+                            <div class="card-body">
+
+                                <div class="input-group">
+                                    <span>Host Name *:</span>
+                                    <input type="text" placeholder="Localhost" class="form-control">
+                                    <span>Port *:</span>
+                                    <input type="text" placeholder="1433" class="form-control">
+
+                                </div>
+                                <div class="input-group" style="margin-top: 10px;">
+                                    <span>Database Name *:</span>
+                                    <input type="text" placeholder="Dbname NameXXX" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group" style="margin-top: 10px;width:560px;">
+                            <span>User Database Connect *:</span>
+                            <input type="text" placeholder="Db_user_connectXXX" class="form-control">
+                            <span>Password *:</span>
+                            <input type="password" placeholder="********" class="form-control">
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div style="margin-left:410px;margin-top:20px;">
+                    <button class="btn btn-secondary">Test Connection</button>
+                </div>
+                <div style="margin-left:20%;margin-top:20px;">
+                    <button class="btn btn-secondary" id="sidebarCollapse">บันทึก</button>
+                    <button class="btn btn-secondary">ยกเลิก</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.20/datatables.min.js"></script>
+
+</body>
+
+</html>

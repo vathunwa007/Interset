@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home5</title>
+    <title>home3</title>
     <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -30,30 +30,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> <img src="http://www.nso.go.th/sites/2014/_catalogs/masterpage/NSO1/img/logo.png" alt="" srcset="" width="200px" style="display:block;margin: auto;"> <br>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <iframe src="navbar.html" width="100%" height="100%" style="border:none;margin-bottom: -40px;;"></iframe>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active ">
-
-                </li>
-
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item active ">
-                    <p style="display: inline;">Wellcome Username XXX</p>
-                    <button type="submit" class="btn btn-secondary ">Logout</button>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar">
@@ -126,48 +104,68 @@
             </ul>
         </nav>
         <div class="body">
-            <h3 style="margin-top:50px;">การนำขึ้นสู่ระบบ</h3>
+            <h3 style="margin-top:50px;">รายการฐานข้อมูลภายนอก</h3>
             <div id="btinline">
-                <button class="btn btn-secondary">Upload</button>
-
+                <button class="btn btn-secondary">สร้างการเชื่อมโยงฐานข้อมูล</button>
+                <button class="btn btn-secondary">ลบ</button>
             </div>
             <div class="table-responsive " style="width: 100%;">
                 <table class="table" id="datatable">
                     <thead class="text-secondary">
                         <th>
+                            <input type="checkbox">
+                        </th>
+                        <th>
+                            จัดการ
+                        </th>
+                        <th>
                             ลำดับ
                         </th>
                         <th>
-                            รายการข้อมูล
+                            ชื่อเชื่อมต่อฐานข้อมูล
                         </th>
                         <th>
-                            File Nmae
+                            สร้างโดย
                         </th>
                         <th>
-                            Date Time
+                            วันที่สร้าง
                         </th>
                         <th>
-                           User Name
+                            แก้ไขโดย
                         </th>
+                        <th>
+                            วันที่แก้ไข
+                        </th>
+
+
 
                     </thead>
                     <tbody>
 
                         <tr>
                             <td>
-                            xxxxxxxx
+                                <input type="checkbox">
                             </td>
                             <td>
-                            xxxxxxxx
+                                xxxxxxxx
                             </td>
                             <td>
-                            xxxxxxxx
+                                xxxxxxxx
                             </td>
                             <td>
-                            xxxxxxxx
+                                xxxxxxxx
                             </td>
                             <td>
-                            xxxxxxxx
+                                xxxxxxxx
+                            </td>
+                            <td>
+                                xxxxxxxx
+                            </td>
+                            <td>
+                                xxxxxxxx
+                            </td>
+                            <td>
+                                xxxxxxxx
                             </td>
                         </tr>
                     </tbody>
@@ -204,6 +202,9 @@
             }, {
                 "width": "5%",
                 "targets": 4
+            }, {
+                "width": "5%",
+                "targets": 5
             }],
             "bFilter": false,
 
